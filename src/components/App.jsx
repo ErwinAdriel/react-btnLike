@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 
 function App() {
 
@@ -8,6 +8,8 @@ function App() {
     setLikes(likes + 1);
   };
 
+  useEffect(darLike, []);
+  
   return (
     <div className='body'>
       <h1>Likes {likes}</h1>
